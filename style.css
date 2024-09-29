@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #c6d6ff, #8ca6ff);
+    color: #333;
+    padding-top: 4%;
+    padding-left: 10%;
+}
+
+.container h1{
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.container h1 img{
+    width: 60px;
+}
+
+.container button img{
+    width: 25px;
+    margin-right: 8px;
+}
+
+.container button{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #7692ff, #5675ff);
+    color: #fff;
+    font-size: 16px;
+    outline: 0;
+    border: 0;
+    border-radius: 40px;
+    padding: 15px 25px;
+    margin: 30px 0 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.container button:hover{
+    background: linear-gradient(135deg, #5675ff, #3e5fd1);
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-box img{
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    filter: brightness(0.85);
+}
+
+.input-box img:hover{
+    filter: brightness(1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 5%;
+        padding-top: 8%;
+        background: linear-gradient(135deg, #c6d6ff, #8ca6ff);
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .container h1 img {
+        width: 50px;
+    }
+
+    .container button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .input-box {
+        max-width: 100%; 
+        min-height: 120px;
+    }
+
+    .input-box img {
+        width: 20px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-left: 2%;
+        padding-top: 10%;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .container h1 img {
+        width: 40px;
+    }
+
+    .container button {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+
+    .input-box {
+        max-width: 100%;
+        min-height: 100px;
+    }
+
+    .input-box img {
+        width: 18px;
+    }
+}
